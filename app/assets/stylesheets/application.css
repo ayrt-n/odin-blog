@@ -59,6 +59,10 @@ h1 {
   font-size: 2rem;
 }
 
+h2 {
+  font-size: 1.35rem;
+}
+
 div.article-preview-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
@@ -132,4 +136,25 @@ a.control {
 a.control:hover {
   color: #444;
   text-decoration: none;
+}
+
+div.content-card.comment-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 450px;
+}
+
+div.content-card.comment-container > div.comment {
+  margin: 0;
+}
+
+div.comment > h4 {
+  color: #888;
+  margin-bottom: 10px;
+}
+
+div.header-container.comment-section {
+  padding-bottom: 1rem;
 }
