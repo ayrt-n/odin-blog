@@ -1,3 +1,11 @@
-<h1>Edit Article</h1>
+<div class="header-container">
+  <h1>Edit Article</h1>
+
+  <%= link_to article_path(@article), class: "control" do %>
+    <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" />
+    </svg>
+  <% end %>
+</div>
 
 <%= render "form", article: @article %>
