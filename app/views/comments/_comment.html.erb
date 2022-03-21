@@ -1,16 +1,16 @@
-  <p>
-    <strong>Commenter:</strong>
-    <%= comment.commenter %>
-  </p>
-  <p>
-    <strong>Comment:</strong>
-    <%= comment.body %>
-  </p>
-
-  <p>
-    <%= link_to "Destroy Comment", [comment.article, comment], data:
-     {
+<div class="comment-container content-card">
+  <div class="comment">
+    <h4><%= comment.commenter %></h4>
+    <p><%= comment.body %></p>
+  </div>
+  <div class="article-controls">
+    <%= link_to [comment.article, comment], class: "control", data: {
       turbo_method: :delete,
       turbo_confirm: "Are you sure?"
-      }%>
-  </p>
+    } do %>
+      <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+          <path fill="currentColor" d="M9,3V4H4V6H5V19A2,2 0 0,0 7,21H17A2,2 0 0,0 19,19V6H20V4H15V3H9M7,6H17V19H7V6M9,8V17H11V8H9M13,8V17H15V8H13Z" />
+      </svg>
+    <% end %>
+  </div>
+</div>
