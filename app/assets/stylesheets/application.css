@@ -45,6 +45,7 @@ body {
 }
 
 div.main-content-container {
+  width: 100%;
   max-width: 900px;
 }
 
@@ -163,6 +164,7 @@ div.header-container.comment-section {
 input[type="text"] {
   width: 33%;
   font-family: inherit;
+  font-size: 1rem;
 }
 
 input[type="text"].author::placeholder {
@@ -173,7 +175,8 @@ textarea {
   width: 100%;
   height: 100px;
   font-family: inherit;
-  resize: none
+  resize: none;
+  font-size: 1rem;
 }
 
 label.hidden-label {
@@ -193,14 +196,24 @@ input[type="submit"] {
   color: white;
   line-height: 25px;
   text-decoration: none;
+  font-size: 1rem;
 }
 
 input[type="submit"] {
   background-color: #1992d4;
 }
-a.btn-readmore:hover {
+input[type="submit"]:hover {
   background-color: #1482bd;
 }
-a.btn-readmore:active {
+input[type="submit"]:active {
   background-color: #1f9ee3;
+}
+
+div.field_with_errors {
+  display: inline;
+}
+
+.error {
+  color: red;
+  font-size: 0.9rem;
 }
